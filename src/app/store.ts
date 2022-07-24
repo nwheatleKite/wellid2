@@ -1,9 +1,19 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
 
+import plateSize from "../features/plateSizeSlice"
+import isMultiPlates from "../features/isMultiPlateSlice"
+import sortWells from "../features/sortWellsSlice"
+import showOutput from "../features/showOutput"
+import inputWells from '../features/inputWellsSlice';
+import wellFormat from "../features/outputWellFormat"
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    plateSize,
+    isMultiPlates,
+    sortWells,
+    showOutput,
+    inputWells,
+    wellFormat
   },
 });
 

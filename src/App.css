@@ -39,3 +39,12 @@
 .sel:hover {
   font-style: italic;
 }
+
+.numberInput {
+  width: 55px;
+  padding: 2px;
+  text-align: center;
+  font-size: x-large;
+  border: none;
+  border-radius: 4px;
+}

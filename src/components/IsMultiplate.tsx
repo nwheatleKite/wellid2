@@ -12,20 +12,19 @@ const IsMultiPlate = () => {
             dispatch(setIsMultiPlates(true))
         } else if (value === "wells" && isMultiPlates) {
             dispatch(setIsMultiPlates(false))
+        } else if (value === "plates" && isMultiPlates) {
+            dispatch(setIsMultiPlates(false))
         }
     }
 
     return (
         <div>
-            <div data-value="wells" className={isMultiPlates ? "" : "border"} onClick={changeFormat}>
-                Wells
-            </div>
             <div
                 data-value="plates"
-                className={isMultiPlates ? "border" : ""}
+                className={isMultiPlates ? "fsxxl" : "sel"}
                 onClick={changeFormat}
             >
-                Plates and Wells
+                + Plate Names
             </div>
         </div>
     );
